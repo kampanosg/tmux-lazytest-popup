@@ -35,4 +35,4 @@ The available `TMUX_LAZYTEST_POPUP_BORDER` values are `single`, `rounded`, `doub
 
 ## Usage
 
-To launch `tmux-lazytest-plugin`, press `<prefix>G` (`Shift + g`). The plugin will use the active pane's current working directory to launch `LazyGit` from. You can close the popup by stopping `LazyGit` (e.g. by pressing `q`)
+To launch `tmux-lazytest-plugin`, press `<prefix>T` (`Shift + t`). The plugin will use the active pane's current working directory to launch `LazyTest` from. You can close the popup by stopping `LazyTest` (e.g. by pressing `q`)

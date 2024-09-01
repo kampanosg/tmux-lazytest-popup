@@ -1,0 +1,9 @@
+variables:
+    file: "tmux-lazytest-popup.ab"
+    output: "tmux-lazytest-popup.sh"
+defaults:
+    - compile
+recipes:
+    compile:
+        steps:
+            - "amber :file: :output:"

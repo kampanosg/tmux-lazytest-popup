@@ -1,0 +1,21 @@
+import { exit } from "std"
+import { parse_args } from "./utils.ab"
+
+main(args) {
+    silent $command -v lazytest$ failed {
+        echo "cannot execute lazytest command. make sure it is installed"
+        exit(1)
+    }
+
+    silent $command -v tmux$ failed {
+        echo "cannot execute tmux command. make sure it is installed"
+        exit(1)
+    }
+
+    let params = parse_args(args)
+
+    $tmux display-popup -E -w {params[0]} -h {params[1]} -b {params[2]} -d {params[3]} {params[4]}$ failed {
+        echo "command failed"
+    }
+}
+
